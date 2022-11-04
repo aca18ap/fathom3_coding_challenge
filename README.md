@@ -4,7 +4,8 @@ Small website that spits different kind of jokes
 Created as part of my Graduate Software Engineer application at Fathom3
 
 This application uses Node.js, Express and Mysql at the back-end.
-The front end is built using exclusively HTML, CSS and Javascript, with the help of jQuery and Bootstrap for API calls and layout alignment respectively.
+The front-end is built using EJS(embedded javascript), CSS and Javascript, with the help of jQuery and Bootstrap for API calls and layout alignment respectively.
+EJS was chosen over other template engines for its similarity with HTML, as requested by the brief.
 
 To run the app the following must be installed on your machine:
 
