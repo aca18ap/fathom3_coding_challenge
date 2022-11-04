@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src="javascripts/jokes.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid text-center d-flex flex-column h-100">
+        <div class="d-flex justify-content-center">
+
+            <h1 class="title">
+                Laughter machine
+            </h1>
+        </div>
+        <div class="d-flex justify-content-center">
+
+            <div class="d-flex flex-column p-2">
+                <div class="">
+                    <label for="type">What kind of joke do you wanna hear?</label>
+                    <input type="checkbox" id="surprise" name="surprise" value="surprise">Surprise me</input>
+                </div>
+                <select name="type" id="type">
+                  <option value="general">General</option>
+                  <option value="knock-knock">Knock-knock</option>
+                  <option value="programming">Programming</option>
+                </select>
+
+            </div>
+            <button onclick="getJoke()" class="btn btn-joke">Click for a joke</button>
+        </div>
+
+        <div class="d-flex justify-content-center h-100">
+            <div class="d-flex flex-wrap align-content-around">
+
+                <div class="joke d-flex flex-column">
+                    <h3 id="setup">
+                    </h3>
+                    <h2 id="wait">
+
+                    </h2>
+                    <h1 id="punchline">
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

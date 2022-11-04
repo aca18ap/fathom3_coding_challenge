@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Carnevalee Freakshow';
+    src: url('../fonts/Carnevalee-Freakshow.ttf') format('truetype');
+}
+
+body {
+    padding: 2%;
+    font: 14px 'Carnevalee Freakshow';
+    background: linear-gradient(0deg, rgb(57, 3, 3) 0%, rgb(192, 35, 35) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+}
+
+.container-fluid {
+    border-style: dotted;
+    border-width: 25px;
+    border-color: gold;
+    padding: 0;
+}
+
+.btn.btn-joke {
+    background-color: black;
+    color: gold;
+}
+
+h1.title {
+    width: min-content;
+    font-size: 4rem;
+    text-shadow: 3px 3px black;
+}
