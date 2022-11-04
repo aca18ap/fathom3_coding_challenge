@@ -14,19 +14,19 @@ To run the app the following must be installed on your machine:
 
 Before running the app, you must create a new database for the application to work with.
 This can be done through Mysql Shell, by running the command:
-'''
+```
 CREATE DATABASE jokes_db
-'''
-The program is set up to interface with the database locally using the config details found in 'config/db.js'
+```
+The program is set up to interface with the database locally using the config details found in `config/db.js`
 
-To run the app, open terminal and navigate to ./fathom3_coding_challenge and run the following commands
+To run the app, open terminal and navigate to `./fathom3_coding_challenge` and run the following commands
 
-
+```
 npm install
 npm start
+```
 
-
-You should now be able to navigate to 'http://localhost:3000/' and see the Laughter machine at work!
+You should now be able to navigate to `http://localhost:3000/` and see the Laughter machine at work!
 Make sure no other servers are running on the same port.
 
 
