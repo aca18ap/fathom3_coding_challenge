@@ -1,3 +1,7 @@
+/**
+ * Attaching event listener to surprise me checkbox
+ * If clicked, the 
+ */
 $(document).ready(function() {
     let surprise = $('#surprise')
     surprise.mousedown((e) => {
@@ -12,6 +16,11 @@ $(document).ready(function() {
 })
 
 
+/**
+ * Function getJoke, is triggered by the 'Click for a joke' button
+ * The function performs an ajax get request with the type of joke as query parameter
+ * On success, the joke received is passed to the functino showJoke
+ */
 function getJoke() {
     let jokeType;
     if ($('#surprise').is(':checked')) {
@@ -27,12 +36,16 @@ function getJoke() {
             type: jokeType
         },
         success: res => {
-            console.log(res)
             showJoke(res)
         }
     })
 }
 
+/**
+ * 
+ * @param {setup, punchline} joke is an object containing the setup and punchline received from the server
+ * These are then passed onto the DOM along a suspense building .... 
+ */
 function showJoke(joke) {
     let setup = $('#setup')
     let punchline = $('#punchline').hide()
